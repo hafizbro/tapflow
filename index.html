@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapFlow Solutions | Restaurant Growth Engine</title>
+    <meta name="description"
+        content="Turn offline diners into 5-Star Google Reviews and build a customer database via WiFi automation with TapFlow.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons: Lucide (via CDN for simplicity, or could use SVG directly) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="TapFlow Logo" style="height: 35px; mix-blend-mode: multiply;">
+                TapFlow Solutions
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#demo" class="nav-link">How It Works</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="nav-link" style="font-weight: 600;">Partner Login</a>
+                <a href="https://wa.me/8801316985443?text=Hello%2C%20I%20want%20to%20know%20more%20about%20TapFlow."
+                    class="btn btn-primary btn-pulse desktop-cta">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content fade-up">
+                <h1>Turn Tables into Data & <span class="text-primary">5-Star Reviews.</span></h1>
+                <p>The all-in-one NFC & WiFi automation system for modern restaurants in Bangladesh. Stop asking for
+                    reviews, start automating them.</p>
+                <div class="hero-btns">
+                    <a href="#pricing" class="btn btn-primary">See Pricing</a>
+                    <a href="#demo" class="btn btn-secondary">Watch Demo</a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-up">
+                <!-- 3D Phone CSS -->
+                <div class="phone">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <!-- Mock Screen Content -->
+                        <div
+                            style="padding: 60px 20px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+                            <div style="font-weight:700; font-size:1.2rem; margin-bottom:10px;">TapFlow WiFi</div>
+                            <p style="font-size:0.8rem;">Connect to high-speed internet</p>
+                            <div
+                                style="background:#2563EB; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; margin-top:20px;">
+                                <i data-lucide="wifi"></i>
+                            </div>
+                            <div style="margin-top:40px; width:100%; border-bottom:1px solid #eee;"></div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png"
+                                alt="Google Review" style="width:60px; margin-top:30px;">
+                            <div style="font-weight:700; margin-top:10px;">Review Us</div>
+                            <div style="color:#F59E0B; margin-top:5px;">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NFC Stand Visual -->
+                <div class="nfc-stand">
+                    <i data-lucide="rss" class="text-primary" size="32"></i>
+                    <!-- Animated Waves -->
+                    <div class="nfc-wave"></div>
+                    <div class="nfc-wave"></div>
+                    <div class="nfc-wave"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM VS SOLUTION -->
+    <section class="section-padding" style="background: white;">
+        <div class="container">
+            <div class="text-center fade-up" style="margin-bottom: 3rem;">
+                <h2>Why Restaurants Switch to TapFlow Solutions</h2>
+                <p>The old way of doing things is costing you customers.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Old Way -->
+                <div class="card card-bad fade-up">
+                    <h3 style="margin-bottom: 1.5rem; color:#EF4444;">The Old Way</h3>
+                    <ul class="comparison-list">
+                        <li><i data-lucide="x-circle" style="color:#EF4444; flex-shrink:0;"></i> Begging customers for
+                            reviews awkwardly.</li>
+                        <li><i data-lucide="x-circle" style="color:#EF4444; flex-shrink:0;"></i> Writing WiFi passwords
+                            on napkins.</li>
+                        <li><i data-lucide="x-circle" style="color:#EF4444; flex-shrink:0;"></i> Zero data on who visits
+                            your restaurant.</li>
+                        <li><i data-lucide="x-circle" style="color:#EF4444; flex-shrink:0;"></i> Bad reviews go straight
+                            to Google.</li>
+                    </ul>
+                </div>
+
+                <!-- TapFlow Way -->
+                <div class="card card-good fade-up">
+                    <h3 style="margin-bottom: 1.5rem; color:var(--secondary);">The TapFlow Way</h3>
+                    <ul class="comparison-list">
+                        <li><i data-lucide="check-circle" style="color:var(--secondary); flex-shrink:0;"></i>
+                            Auto-redirect happy customers to 5-stars.</li>
+                        <li><i data-lucide="check-circle" style="color:var(--secondary); flex-shrink:0;"></i> One-tap
+                            WiFi connection via QR/NFC.</li>
+                        <li><i data-lucide="check-circle" style="color:var(--secondary); flex-shrink:0;"></i>
+                            Automatically build a customer SMS/Email list.</li>
+                        <li><i data-lucide="check-circle" style="color:var(--secondary); flex-shrink:0;"></i> Filter
+                            negative feedback privately.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-up">
+                <h2>Three Powerful Engines</h2>
+                <p>One platform to rule your restaurant's growth.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i data-lucide="shield"></i></div>
+                    <h3>The Reputation Shield</h3>
+                    <p style="margin-top:1rem;">Smart filtering logic. We guide happy customers to Google and unhappy
+                        ones to a private feedback form. Protect your rating.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i data-lucide="wifi"></i></div>
+                    <h3>The WiFi Gatekeeper</h3>
+                    <p style="margin-top:1rem;">No more passwords. Customers scan a QR code, provide their phone number,
+                        and get instant high-speed internet. You get the Lead.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <h3>Smart Growth Dashboard</h3>
+                    <p style="margin-top:1rem;">Monitor your business growth daily. Track total scans, review
+                        conversions, and access your collected customer database instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE DEMO -->
+    <section id="demo" class="demo-section">
+        <div class="container demo-container">
+            <div class="text-center fade-up">
+                <h2 style="color:white;">Experience the Magic</h2>
+                <p style="color:#9CA3AF;">Try the interactive simulation below.</p>
+            </div>
+
+            <div class="demo-phone fade-up">
+                <div class="phone-notch"></div>
+                <div class="demo-screen">
+                    <!-- 1. HOME: Experience Check -->
+                    <div id="demo-home" class="demo-screen-content active">
+                        <div class="logo-small" style="margin-bottom: 2rem;">
+                            <!-- Pulsing Logo -->
+                            <div
+                                style="background: rgba(37, 99, 235, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="zap" class="text-primary" size="32"
+                                    style="filter: drop-shadow(0 2px 4px rgba(37,99,235,0.3));"></i>
+                            </div>
+                        </div>
+                        <h3 style="color:#111827; margin-bottom: 2.5rem; font-size: 1.5rem;">How was your<br>experience
+                            today?</h3>
+
+                        <div class="rating-buttons">
+                            <button onclick="handleRating('good')" class="rating-btn happy">
+                                <span class="emoji">😍</span>
+                                <span class="label">Great!</span>
+                            </button>
+                            <button onclick="handleRating('bad')" class="rating-btn sad">
+                                <span class="emoji">😞</span>
+                                <span class="label">Not Good</span>
+                            </button>
+                        </div>
+
+                        <div style="margin-top: auto; padding-bottom: 1rem;">
+                            <p style="font-size: 0.85rem; color: #6B7280; margin-bottom: 5px;">Need internet access?</p>
+                            <button onclick="showScreen('demo-wifi-form')" class="demo-text-link">
+                                Connect to WiFi
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. WIFI FORM -->
+                    <div id="demo-wifi-form" class="demo-screen-content">
+                        <button onclick="showScreen('demo-home')" class="back-btn"><i data-lucide="arrow-left"
+                                size="20"></i></button>
+
+                        <div
+                            style="width:100%; flex:1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div style="background: #EFF6FF; padding: 20px; border-radius: 50%; margin-bottom: 1.5rem;">
+                                <i data-lucide="wifi" size="32" class="text-primary"></i>
+                            </div>
+                            <h3 style="color:#111827; margin-bottom: 0.5rem; font-size: 1.25rem;">Free WiFi Access</h3>
+                            <p style="font-size:0.95rem; color: #6B7280; margin-bottom:2rem; max-width: 240px;">Join the
+                                <strong>TapFlow Guest</strong> network instantly.
+                            </p>
+
+                            <input type="text" placeholder="Mobile Number" style="text-align: center;">
+
+                            <button onclick="submitWifiForm()" class="demo-btn-primary">
+                                Get Access <i data-lucide="arrow-right" size="18"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. WIFI SUCCESS -->
+                    <div id="demo-wifi-success" class="demo-screen-content">
+                        <button onclick="showScreen('demo-home')" class="back-btn"><i data-lucide="arrow-left"
+                                size="20"></i></button>
+
+                        <div
+                            style="width:100%; flex:1; display: flex; flex-direction: column; justify-content: center;">
+                            <div
+                                style="background: white; padding: 20px; border-radius: 20px; border: 1px solid #E5E7EB; margin-bottom: 2rem; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); align-self: center;">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=WIFI:S:TapFlow%20Demo;T:WPA;P:tapflow123;;"
+                                    alt="WiFi QR"
+                                    style="width: 160px; height: 160px; border-radius: 8px; display: block;">
+                            </div>
+
+                            <div
+                                style="background: #F9FAFB; border-radius: 16px; padding: 20px; text-align: left; border: 1px solid #F3F4F6;">
+                                <div
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px dashed #E5E7EB; padding-bottom: 12px;">
+                                    <span style="font-size: 0.9rem; color: #6B7280;">Network</span>
+                                    <span style="font-weight: 700; color: #111827;">TapFlow Demo</span>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 0.9rem; color: #6B7280;">Password</span>
+                                    <div style="display: flex; gap: 8px; align-items: center;">
+                                        <span id="wifi-pass"
+                                            style="font-family: monospace; font-size: 1.1rem; font-weight: 600; color: #111827;">tapflow123</span>
+                                        <button onclick="copyPassword()"
+                                            style="background: white; border: 1px solid #E5E7EB; width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #4B5563;">
+                                            <i data-lucide="copy" size="14"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. FEEDBACK FORM -->
+                    <div id="demo-feedback" class="demo-screen-content">
+                        <button onclick="showScreen('demo-home')" class="back-btn"><i data-lucide="arrow-left"
+                                size="20"></i></button>
+
+                        <div
+                            style="width:100%; flex:1; display: flex; flex-direction: column; justify-content: center;">
+                            <div
+                                style="width: 60px; height: 60px; background: #FEF2F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                                <span style="font-size: 2rem;">😔</span>
+                            </div>
+
+                            <h3 style="color:#111827; margin-bottom: 0.5rem; font-size: 1.5rem;">We're Sorry!</h3>
+                            <p style="font-size:0.95rem; color: #6B7280; margin-bottom:2rem;">Your feedback helps us
+                                improve.</p>
+
+                            <input type="text" placeholder="Name (Optional)">
+                            <input type="text" placeholder="Mobile (Optional)">
+                            <textarea placeholder="Tell us what went wrong..."
+                                style="height: 100px; resize: none;"></textarea>
+
+                            <button onclick="submitFeedback()" class="demo-btn-primary" style="margin-top: 0.5rem;">
+                                Submit Feedback
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 5. FEEDBACK SUCCESS -->
+                    <div id="demo-feedback-success" class="demo-screen-content">
+                        <div
+                            style="width:100%; flex:1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <div
+                                style="width: 80px; height: 80px; background: #ECFDF5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                                <i data-lucide="check" size="40" style="color: #10B981;"></i>
+                            </div>
+
+                            <h3 style="color:#111827; margin-bottom: 1rem; font-size: 1.5rem;">Thank You!</h3>
+                            <p style="font-size:0.95rem; color: #6B7280; margin-bottom:2rem; max-width: 260px;">
+                                We appreciate your feedback. We'll review it carefully and work on improving your
+                                experience.
+                            </p>
+
+                            <button onclick="showScreen('demo-home')" class="demo-btn-primary"
+                                style="background: linear-gradient(135deg, #10B981, #059669); margin-top: 1rem;">
+                                Back to Home
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-up">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the model that fits your business.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Growth Partner Plan (Centered) -->
+                <div class="price-card fade-up">
+                    <div class="best-value">ALL-IN-ONE SOLUTION</div>
+                    <h3 style="font-size: 1.75rem; color: #111827;">Growth Partner</h3>
+                    <p style="font-size:0.95rem; color: #4B5563; margin-top: 5px;">Scalable automation for serious
+                        restaurants.</p>
+
+                    <div class="price" style="color: #111827; margin: 1.5rem 0 0.5rem;">
+                        <span id="price-display">2,000</span> <span>BDT Setup</span>
+                    </div>
+                    <div style="font-size:0.9rem; color:#6B7280; margin-bottom:2rem; font-weight: 500;">
+                        + 1,000 BDT/mo Subscription
+                    </div>
+
+                    <!-- Dynamic Calculator -->
+                    <div class="calculator-area">
+                        <!-- Stand Type Selector -->
+                        <div class="stand-selector">
+                            <label>Choose Stand Material:</label>
+                            <div class="toggle-container">
+                                <!-- Standard Option -->
+                                <div class="radio-option selected" onclick="selectStandType('standard', this)">
+                                    <div class="radio-circle"></div>
+                                    <span class="option-text">Standard Acrylic</span>
+                                </div>
+                                <!-- Premium Option -->
+                                <div class="radio-option" onclick="selectStandType('premium', this)">
+                                    <div class="radio-circle"></div>
+                                    <span class="option-text">Premium Wooden</span>
+                                    <span class="option-badge">+ 500 BDT</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="counter-label">
+                            How many tables?
+                            <span style="font-size: 0.8rem; font-weight: 400; color: #6B7280;">(Min. 5)</span>
+                        </div>
+                        <div class="counter-controls">
+                            <button onclick="updatePricing(-1)" class="counter-btn">-</button>
+                            <!-- Stand Count Display -->
+                            <div class="counter-display" id="stand-counter">5</div>
+                            <button onclick="updatePricing(1)" class="counter-btn">+</button>
+                        </div>
+                        <div class="setup-fee-display" style="border-top:none; padding-top:0; font-size:0.85rem;"
+                            id="additional-cost-text">
+                            Additional stands: 200 BDT each
+                        </div>
+                    </div>
+
+                    <!-- Dynamic WhatsApp Link -->
+                    <a href="#" id="whatsapp-link" class="btn btn-primary btn-pulse"
+                        style="width:100%; margin-bottom:2rem; background: linear-gradient(90deg, #2563EB, #1D4ED8); border:none;">
+                        Start Growth Partnership
+                    </a>
+
+                    <ul class="feature-list" style="border-top: 1px solid #F3F4F6; padding-top: 1.5rem;">
+                        <!-- Dynamic Feature Item -->
+                        <li>
+                            <i data-lucide="check-circle" size="20" class="text-primary"
+                                style="fill: #DBEAFE; color: #2563EB;"></i>
+                            <span style="font-weight:600; color:#374151;">
+                                Includes <span id="feature-stand-text">5</span> NFC Tables
+                            </span>
+                        </li>
+                        <li><i data-lucide="check-circle" size="20" class="text-secondary"
+                                style="fill: #DCFCE7; color: #16A34A;"></i> Smart WiFi Automation</li>
+                        <li><i data-lucide="check-circle" size="20" class="text-secondary"
+                                style="fill: #DCFCE7; color: #16A34A;"></i> Google Review Shield</li>
+                        <li><i data-lucide="check-circle" size="20" class="text-secondary"
+                                style="fill: #DCFCE7; color: #16A34A;"></i> Customer Data Collection</li>
+                        <li><i data-lucide="check-circle" size="20" class="text-primary"
+                                style="fill: #DBEAFE; color: #2563EB;"></i> Weekly Analytics Report</li>
+                        <li><i data-lucide="check-circle" size="20" class="text-primary"
+                                style="fill: #DBEAFE; color: #2563EB;"></i> 24/7 Priority Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" style="background: white;">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center fade-up" style="margin-bottom:3rem;">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-item fade-up" style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom:0.5rem;">Q: What if I change my WiFi password?</h4>
+                <p>A: Just update it on our dashboard in seconds. No need to reprint QR codes or re-configure the
+                    stands. It syncs instantly.</p>
+            </div>
+
+            <div class="faq-item fade-up" style="margin-bottom: 2rem;">
+                <h4 style="margin-bottom:0.5rem;">Q: Is it safe for my Google Business Profile?</h4>
+                <p>A: Yes, absolutely. We use standard URL redirection which is fully compliant with Google's terms. We
+                    simply make the process faster for the customer.</p>
+            </div>
+
+            <div class="faq-item fade-up">
+                <h4 style="margin-bottom:0.5rem;">Q: Do I need to buy the hardware again efficiently?</h4>
+                <p>A: No! The NFC stands are durable and water-resistant. If you're on the subscription plan, we replace
+                    damaged ones for free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-up" style="margin-bottom: 4rem;">
+                <h2>About Us</h2>
+                <p class="text-primary" style="font-weight: 600; margin-top: 0.5rem;">Bridging the Gap Between
+                    Hospitality & Technology.</p>
+            </div>
+
+            <div class="about-grid fade-up">
+                <div class="about-content">
+                    <h3 style="margin-bottom: 1rem;">Our Story</h3>
+                    <p style="margin-bottom: 2rem;">
+                        TapFlow Solutions was born from a simple observation: Restaurants in Dhaka make amazing food,
+                        but they struggle to get the online recognition they deserve. We saw waiters awkwardly asking
+                        for reviews and customers frustrated with typing long WiFi passwords. We knew there had to be a
+                        smarter way.
+                    </p>
+
+                    <h3 style="margin-bottom: 1rem;">Who We Are</h3>
+                    <p style="margin-bottom: 2rem;">
+                        We are a Dhaka-based technology agency specialized in <strong>Restaurant Automation</strong>. We
+                        don't just sell hardware; we provide a digital ecosystem. From <strong>NFC-powered Review
+                            Systems</strong> to <strong>Smart WiFi Gateways</strong>, our mission is to turn every table
+                        into a digital touchpoint.
+                    </p>
+
+                    <div
+                        style="background: white; padding: 20px; border-left: 4px solid var(--secondary); border-radius: 0 8px 8px 0; box-shadow: var(--shadow-sm);">
+                        <h4 style="color: var(--secondary); margin-bottom: 0.5rem;">Our Mission</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 0;">To empower 10,000+ restaurants in Bangladesh
+                            with affordable, high-tech automation tools that increase revenue and customer loyalty.</p>
+                    </div>
+                </div>
+
+                <div class="founder-column">
+                    <div class="founder-card">
+                        <img src="assets/images/profile.jpg" alt="Hafiz Ahmed"
+                            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; display: block; border: 4px solid #DBEAFE;">
+                        <h3 style="margin-bottom: 0.25rem;">Hafiz Ahmed</h3>
+                        <p class="text-primary" style="font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem;">
+                            Founder & Lead Developer</p>
+                        <p style="font-size: 0.95rem; text-align: center; line-height: 1.6;">
+                            A Computer Science & Engineering (CSE) undergraduate with a passion for building systems
+                            that solve real-world problems. Hafiz believes that technology should be invisible—it should
+                            simply work and make life easier for both business owners and customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding" style="background-color: #F3F4F6;">
+        <div class="container">
+            <div class="text-center fade-up" style="margin-bottom: 4rem;">
+                <h2>Get in Touch</h2>
+                <p class="text-primary" style="font-weight: 600; margin-top: 0.5rem;">Ready to automate your restaurant?
+                    We are here to help.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info fade-up">
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Our Office</h4>
+                            <p>Mohammadpur, Dhaka, Bangladesh.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Call / WhatsApp</h4>
+                            <p>+880 1316-985443 <br><span style="font-size:0.85rem; color:var(--text-muted);">(Available
+                                    Sun-Thu, 10 AM - 6 PM)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>hafizandusaid@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card fade-up">
+                    <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+                    <p style="margin-bottom: 1.5rem; color: #6B7280;">Have a question? Chat with us directly on
+                        WhatsApp.</p>
+                    <a href="https://wa.me/8801316985443?text=Hello%2C%20I%20have%20a%20query." class="btn btn-primary"
+                        style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <i data-lucide="message-circle"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="margin-bottom:1rem;">
+                        <img src="assets/images/logo.png" alt="TapFlow Logo"
+                            style="height: 35px; mix-blend-mode: multiply;"> TapFlow Solutions
+                    </a>
+                    <p style="font-size:0.9rem;">Empowering restaurants with data-driven results.</p>
+                </div>
+                <div>
+                    <h4>Product</h4>
+                    <ul style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted);">
+                        <li style="margin-bottom:0.5rem;"><a href="#features">Features</a></li>
+                        <li style="margin-bottom:0.5rem;"><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted);">
+                        <li style="margin-bottom:0.5rem;"><a href="#about">About</a></li>
+                        <li style="margin-bottom:0.5rem;"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted);">
+                        <li style="margin-bottom:0.5rem;"><a href="privacy.html">Privacy Policy</a></li>
+                        <li style="margin-bottom:0.5rem;"><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 TapFlow Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Init Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
