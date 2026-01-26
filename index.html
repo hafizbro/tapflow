@@ -391,9 +391,10 @@
                     </div>
 
                     <!-- Dynamic WhatsApp Link -->
-                    <a href="#" id="whatsapp-link" class="btn btn-primary btn-pulse"
+                    <a href="javascript:void(0)" id="whatsapp-link" class="btn btn-primary btn-pulse"
+                        onclick="openPaymentModal()"
                         style="width:100%; margin-bottom:2rem; background: linear-gradient(90deg, #2563EB, #1D4ED8); border:none;">
-                        Start Growth Partnership
+                        Order Now
                     </a>
 
                     <ul class="feature-list" style="border-top: 1px solid #F3F4F6; padding-top: 1.5rem;">
@@ -600,7 +601,68 @@
         </div>
     </footer>
 
+    <!-- PAYMENT MODAL -->
+    <div id="payment-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closePaymentModal()">&times;</button>
+            <div class="modal-header">
+                <h3>Complete Your Payment</h3>
+            </div>
+            <div class="modal-body">
+                <div class="bkash-section">
+                    <img src="https://freelogopng.com/images/all_img/1656234745bkash-app-logo-png.png" alt="bKash"
+                        class="bkash-logo">
+                    <p class="bkash-text">Please Send Money to:</p>
+
+                    <div class="number-row">
+                        <p class="bkash-number" id="bkash-number-text" style="margin:0;">01325-886050</p>
+                        <button class="copy-btn" onclick="copyBkashNumber()" title="Copy Number">
+                            <i data-lucide="copy" size="16"></i>
+                        </button>
+                    </div>
+
+                    <span
+                        style="font-size:0.8rem; font-weight:normal; color:#831843; background:#FCE7F3; padding:2px 8px; border-radius:10px;">Personal</span>
+
+                    <p class="instruction-text">
+                        Please use the <strong>'Send Money'</strong> option.
+                    </p>
+                </div>
+                <div class="payment-form">
+                    <div style="margin-bottom: 1rem;">
+                        <label>Restaurant Name</label>
+                        <input type="text" id="restaurant-name-input" placeholder="e.g. Cafe Dropto" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>Your Name</label>
+                        <input type="text" id="owner-name-input" placeholder="Your Full Name" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>Your Phone Number</label>
+                        <input type="tel" id="input-phone" placeholder="e.g. 01712345678" maxlength="11" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>Enter bKash Transaction ID (TrxID)</label>
+                        <input type="text" id="input-trxid" placeholder="e.g. 9H76T5R4" required>
+                        <p class="input-helper">TrxID is found in the confirmation SMS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel" onclick="closePaymentModal()">Cancel</button>
+                <button class="btn-whatsapp-confirm" onclick="confirmPayment()">
+                    Confirm <i data-lucide="message-circle" size="18"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
+    <!-- Firebase SDK (Compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+    <!-- Main Script -->
     <script src="script.js"></script>
     <script>
         // Init Icons
