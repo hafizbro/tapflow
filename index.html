@@ -36,10 +36,10 @@
             <div class="nav-links">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#demo" class="nav-link">How It Works</a>
-                <a href="#about" class="nav-link">About</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="login.html" class="nav-link" style="font-weight: 600;">Partner Login</a>
+                <a href="login.html" class="btn btn-outline">Partner Login</a>
                 <a href="https://wa.me/8801316985443?text=Hello%2C%20I%20want%20to%20know%20more%20about%20TapFlow."
                     class="btn btn-primary btn-pulse desktop-cta">Get Started</a>
             </div>
@@ -69,18 +69,39 @@
                     <div class="phone-screen">
                         <!-- Mock Screen Content -->
                         <div
-                            style="padding: 60px 20px; display:flex; flex-direction:column; align-items:center; text-align:center;">
-                            <div style="font-weight:700; font-size:1.2rem; margin-bottom:10px;">TapFlow WiFi</div>
-                            <p style="font-size:0.8rem;">Connect to high-speed internet</p>
-                            <div
-                                style="background:#2563EB; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; margin-top:20px;">
-                                <i data-lucide="wifi"></i>
+                            style="height: 100%; padding: 80px 20px 40px; display:flex; flex-direction:column; align-items:center; justify-content: space-between; text-align:center;">
+
+                            <!-- Top Spacer (pushes content down slightly) -->
+                            <div></div>
+
+                            <!-- Main: Google Maps Review -->
+                            <div style="display:flex; flex-direction:column; align-items:center;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg"
+                                    alt="Google Maps"
+                                    style="width:90px; margin-bottom:20px; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.1)); transform: scale(1.05);">
+                                <div style="font-weight:800; font-size:1.5rem; color: #111827; margin-bottom: 8px;">
+                                    Review Us</div>
+                                <div style="color:#F59E0B; font-size: 1.25rem; letter-spacing: 4px;">★★★★★</div>
+                                <div style="font-size: 0.85rem; color: #6B7280; margin-top: 5px;">on Google Maps</div>
                             </div>
-                            <div style="margin-top:40px; width:100%; border-bottom:1px solid #eee;"></div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png"
-                                alt="Google Review" style="width:60px; margin-top:30px;">
-                            <div style="font-weight:700; margin-top:10px;">Review Us</div>
-                            <div style="color:#F59E0B; margin-top:5px;">★★★★★</div>
+
+                            <!-- Divider with label -->
+                            <div style="display:flex; align-items:center; width: 100%; gap: 10px; opacity: 0.5;">
+                                <div style="height:1px; background:#E5E7EB; flex:1;"></div>
+                                <span
+                                    style="font-size: 0.7rem; color:#9CA3AF; text-transform:uppercase; letter-spacing:1px;">or</span>
+                                <div style="height:1px; background:#E5E7EB; flex:1;"></div>
+                            </div>
+
+                            <!-- Bottom: WiFi -->
+                            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                <div
+                                    style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#2563EB; margin-bottom: 12px; box-shadow: 0 4px 6px rgba(37,99,235,0.1);">
+                                    <i data-lucide="wifi" size="22"></i>
+                                </div>
+                                <div style="font-weight:600; font-size:1rem; color: #374151;">Free WiFi</div>
+                                <p style="font-size:0.8rem; color:#6B7280; margin:0;">Connect Instantly</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -496,6 +517,10 @@
                             that solve real-world problems. Hafiz believes that technology should be invisible—it should
                             simply work and make life easier for both business owners and customers.
                         </p>
+                        <a href="https://thehafizahmed.netlify.app/" target="_blank" class="btn btn-outline"
+                            style="margin-top: 1.5rem; width: 100%; font-size: 0.85rem;">
+                            <i data-lucide="external-link" size="16"></i> View Portfolio
+                        </a>
                     </div>
                 </div>
             </div>

@@ -211,6 +211,20 @@ ul {
     border-color: #D1D5DB;
 }
 
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.6rem 1.25rem;
+    /* Slightly more compact for navbar */
+    font-size: 0.9rem;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
 .btn-pulse {
     animation: pulse 2s infinite;
 }
